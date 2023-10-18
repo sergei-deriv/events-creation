@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <header>
           <nav>
-            <ul className='flex items-center gap-4'>
+            <ul className='flex items-center gap-8 justify-center my-2'>
               {links.map((link) => (
                 <Link href={link.href} key={link.label}>
                   <li>{link.label}</li>
