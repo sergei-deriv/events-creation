@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import NewTodoForm from '@/components/Todo/NewTodoForm';
 
 const getData = async () => {
   const data = await new Promise((res) =>
@@ -8,8 +8,12 @@ const getData = async () => {
 };
 
 export default async function Home() {
-  const data: any = await getData();
-  console.log('data = ', data);
+  // const data: any = await getData();
+  // console.log('data = ', data);
 
-  return <h1>Data = {data}</h1>;
+  return (
+    <div>
+      <NewTodoForm />
+    </div>
+  );
 }
