@@ -16,6 +16,7 @@ const links = [
   { href: '/accounts', label: 'Accounts' },
   { href: '/profile', label: 'Profile' },
   { href: '/settings', label: 'Settings' },
+  { href: '/todos', label: 'Todos' },
   { href: '/about', label: 'About' },
 ];
 
