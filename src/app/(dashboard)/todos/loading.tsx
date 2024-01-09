@@ -1,6 +1,6 @@
 'use client';
 
-const Loading = ({ children }: React.PropsWithChildren) => {
+const Loading = () => {
   return <div>Loading...</div>;
 };
 

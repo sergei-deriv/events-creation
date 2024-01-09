@@ -1,6 +1,6 @@
 'use client';
 
-const ErrorUI = ({ children }: React.PropsWithChildren) => {
+const ErrorUI = () => {
   return <div>oops...</div>;
 };
 
