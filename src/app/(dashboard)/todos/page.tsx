@@ -7,6 +7,8 @@ const getData = async () => {
 };
 
 const TodosPage = async () => {
+  // await new Promise((res, rej) => setTimeout(() => res(''), 2000)); // to see loading
+  // await new Promise((res, rej) => setTimeout(() => rej(''), 2000)); // to show error
   const todos = await getData();
   return (
     <div>
