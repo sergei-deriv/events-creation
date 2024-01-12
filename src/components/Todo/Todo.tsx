@@ -1,9 +1,16 @@
-import React from 'react'
+'use client';
 
-const Todo = ({todo}: any) => {
+import { completeTodo } from '@/utils/actions';
+import { useTransition } from 'react';
+
+const Todo = ({ todo }: any) => {
+  const [isPending, startTransition] = useTransition();
+
   return (
-    <div>{todo.content}</div>
-  )
-}
+    <div>
+      <span className={`cursor-pointer ${todo.completed && 'line-through'}`} onClick={() => startTransition(() => completeTodo(todo.id))}>{todo.content}</span>
+    </div>
+  );
+};
 
-export default Todo
+export default Todo;
